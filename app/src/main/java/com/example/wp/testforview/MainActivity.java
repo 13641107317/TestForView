@@ -1,0 +1,21 @@
+package com.example.wp.testforview;
+
+import android.graphics.drawable.ClipDrawable;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.ImageView;
+
+public class MainActivity extends AppCompatActivity {
+    private ImageView image;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        image = (ImageView) findViewById(R.id.image);
+        ClipDrawable testClipDrawable = (ClipDrawable) image.getDrawable();
+        testClipDrawable.setLevel(8000);
+
+    }
+}
