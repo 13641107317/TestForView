@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import java.util.LinkedList;
+
 public class MainActivity extends AppCompatActivity {
     private ImageView image;
-
+    LinkedList linkedList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
