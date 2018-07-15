@@ -2,6 +2,9 @@ package com.example.wp.testforview;
 
 import org.junit.Test;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import static org.junit.Assert.*;
 
 /**
@@ -14,7 +17,11 @@ public class ExampleUnitSingleTon {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
-
+    @Test
+    public void queue(){
+        MyBlockQueue<Integer> myBlockQueue = new MyBlockQueue(10);
+        ExecutorService service = Executors.newCachedThreadPool();
+    }
     @Test
     public void sort1() {
         int[] numbers = new int[]{12, 32, 543, 21, 3, 56};
